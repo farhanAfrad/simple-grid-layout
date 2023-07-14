@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+</head>
+<style>
+    .container{
+        place-content: center;
+        display: grid;
+        grid-template-columns: repeat(4,150px);
+        grid-template-rows: repeat(3,150px);
+        gap: 20px;
+        height: 100vh;  
+    }
+    .container div{
+        background-color: grey;
+        border-radius: 5px;
+    }
+    #first{
+        grid-row: span 5;
+    }
+    .full-width-row-one{
+        grid-column: span 3;
+        color: gray;
+    }
+    #red1,#red2,#red3,#red4{
+        background: rgb(235, 112, 112);
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="first"></div>
+        <div id=""></div>
+        <div id=""></div>
+        <div id=""></div>
+        <div id=""></div>
+        <div id="red1">
+            </div>
+        <div id="red2"></div>
+        <div id=""></div>
+        <div id="red3"></div>
+        <div id="red4"></div>
+        <div class="full-width-row-one">.</div>
+        <div class="full-width-row-one">.</div>
+
+        
+        
+    </div>
+</body>
+</html>
